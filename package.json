@@ -1,8 +1,12 @@
 {
+  "type": "module",
   "name": "frontend-project-lvl1",
   "version": "1.0.0",
-  "description": "Mind games project",
-  "main": "index.js",
+  "description": "Brain Games Project",
+  "main": "src/index.js",
+  "bin": {
+    "frontend-project-lvl1": "brain-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +14,11 @@
     "type": "git",
     "url": "git+https://github.com/DariaKaduchka/frontend-project-lvl1.git"
   },
+  "keywords": [
+    "hexlet",
+    "project",
+    "1"
+  ],
   "author": "Daria Kaduchka",
   "license": "ISC",
   "bugs": {
