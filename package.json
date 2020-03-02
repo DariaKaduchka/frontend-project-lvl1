@@ -5,7 +5,7 @@
   "description": "Brain Games Project",
   "main": "src/index.js",
   "bin": {
-    "frontend-project-lvl1": "brain-games.js"
+    "brain-games": "bin/brain-games.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,5 +24,13 @@
   "bugs": {
     "url": "https://github.com/DariaKaduchka/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/DariaKaduchka/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/DariaKaduchka/frontend-project-lvl1#readme",
+  "dependencies": {
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
 }
