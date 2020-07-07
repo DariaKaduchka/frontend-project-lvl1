@@ -1,6 +1,5 @@
-// const getRandom = (min, max) => Math.random() * (max - min) + min;
-export const getRandom = () => Math.floor(Math.random() * 100);
-// Math.floor(Math.random() * 100);
+
+export const getRandom = (n) => Math.floor(Math.random() * (n || 100));
 
 export const getRandomSign = () => {
   const signArr = ['-', '+', '*'];
