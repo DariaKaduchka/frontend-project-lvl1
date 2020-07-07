@@ -2,7 +2,7 @@ install:
 	npm install
 
 start:
-	npx node bin/brain-progression.js
+	npx node bin/brain-games.js
 
 publish:
 	npm publish --dry-run
