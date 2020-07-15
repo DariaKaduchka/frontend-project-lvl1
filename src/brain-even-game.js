@@ -5,6 +5,6 @@ export const getIntro = () => 'Answer "yes" if the number is even, otherwise ans
 
 export const generateQuestion = () => {
   const randomNumber = getRandom();
-  const correctAnswer = isEven(randomNumber);
+  const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
   return { correctAnswer, questionText: `${randomNumber}` };
 };

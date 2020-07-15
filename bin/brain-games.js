@@ -5,14 +5,22 @@ import * as progressionGame from '../src/brain-progression-game.js';
 import * as calcGame from '../src/brain-calc-game.js';
 import * as evenGame from '../src/brain-even-game.js';
 import * as gcdGame from '../src/brain-gcd-game.js';
+import * as primeGame from '../src/brain-prime-game.js';
+
+const games = [
+  { name: 'Calculation', game: calcGame },
+  { name: 'Progression', game: progressionGame },
+  { name: 'Even', game: evenGame },
+  { name: 'Greatest common divider', game: gcdGame },
+  { name: 'Prime', game: primeGame },
+];
 
 const congrats = (username) => console.log(`Congratulations ${username}`);
 const gameIteration = (username, question) => {
   console.log(`Question: ${question.questionText} `);
 
-  // evenGame doesn't work with questionInt
-  const answer = readlineSync.questionInt('Your answer: ');
-  if (answer === question.correctAnswer) {
+  const answer = readlineSync.question('Your answer: ');
+  if (answer === String(question.correctAnswer)) {
     console.log('Correct!');
     return true;
   }
@@ -33,26 +41,15 @@ const startGame = (username, game) => {
 };
 
 const selectGame = () => {
-  //   const games = [calcGame, progressionGame];
-  // console.log(games[0]);
-  // console.log(games[1]);
-  // todo: сделать выбор игр из массива с названиям и индексами
-
-  console.log('Choose a game: 1 Calculation, 2 Progression, 3 Even, 4 Greatest common divider');
+  console.log('Choose a game:');
+  for (let i = 0; i < games.length; i += 1) {
+    console.log(`${i + 1} ${games[i].name}`);
+  }
   const selectionGame = readlineSync.questionInt('Your answer: ');
-  if (selectionGame === 1) {
-    return calcGame;
+  if (selectionGame < 0 || selectionGame > games.length) {
+    return selectGame();
   }
-  if (selectionGame === 2) {
-    return progressionGame;
-  }
-  if (selectionGame === 3) {
-    return evenGame;
-  }
-  if (selectionGame === 4) {
-    return gcdGame;
-  }
-  return selectGame();
+  return games[selectionGame - 1].game;
 };
 
 console.log('Welcome to the Brain Games!');

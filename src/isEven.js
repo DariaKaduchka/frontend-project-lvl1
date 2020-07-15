@@ -1,8 +1,3 @@
-const isEven = (num) => {
-  if (num % 2 === 0) {
-    return 'yes';
-  }
-  return 'no';
-};
+const isEven = (num) => num % 2 === 0;
 
 export default isEven;

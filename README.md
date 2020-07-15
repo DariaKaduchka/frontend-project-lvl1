@@ -5,3 +5,4 @@ https://github.com/DariaKaduchka/frontend-project-lvl1/workflows/nodejs.yml/badg
 [![asciicast](https://asciinema.org/a/SbKsxsqm8x1HwK7QDquRLFdZP.svg)](https://asciinema.org/a/SbKsxsqm8x1HwK7QDquRLFdZP)
 [![asciicast](https://asciinema.org/a/qmMFhg5A1W6guNy7HElFwqCx4.svg)](https://asciinema.org/a/qmMFhg5A1W6guNy7HElFwqCx4)
 [![asciicast](https://asciinema.org/a/27WSxAqcP2PUQM2zKSbUablYF.svg)](https://asciinema.org/a/27WSxAqcP2PUQM2zKSbUablYF)
+[![asciicast](https://asciinema.org/a/xiAUXHIorFhTwGdg3982QMNzK.svg)](https://asciinema.org/a/xiAUXHIorFhTwGdg3982QMNzK)
