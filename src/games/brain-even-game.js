@@ -1,5 +1,6 @@
-import isEven from './isEven.js';
 import { getRandom } from './random.js';
+
+const isEven = (num) => num % 2 === 0;
 
 export const getIntro = () => 'Answer "yes" if the number is even, otherwise answer "no".';
 
